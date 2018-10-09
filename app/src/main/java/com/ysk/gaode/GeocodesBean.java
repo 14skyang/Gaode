@@ -21,9 +21,9 @@ public class GeocodesBean {
 
         private String formatted_address;
         private String province;
-        private String citycode;
+        /*private String citycode;
         private String city;
-        private String district;
+        private String district;*/ //注释掉这些就可以查询市，省级级别的地区了，比如香港，广东，深圳等
         private NeighborhoodBean neighborhood;
         private BuildingBean building;
         private String adcode;
@@ -49,7 +49,7 @@ public class GeocodesBean {
             this.province = province;
         }
 
-        public String getCitycode() {
+       /* public String getCitycode() {
             return citycode;
         }
 
@@ -71,7 +71,7 @@ public class GeocodesBean {
 
         public void setDistrict(String district) {
             this.district = district;
-        }
+        }*/
 
         public NeighborhoodBean getNeighborhood() {
             return neighborhood;

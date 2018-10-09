@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.bt){
-            dizhi=destination.getText().toString().trim();//此处地址不能只到城市级别，应更详细，可以说建筑名字
+            dizhi=destination.getText().toString().trim();//此处地址可以说建筑名字
             if (dizhi.equals("")){
                 Toast.makeText(this, "地址不能为空", Toast.LENGTH_SHORT).show();
             }
